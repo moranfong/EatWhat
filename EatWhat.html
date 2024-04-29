@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="吃点什么？当你不知道这餐吃什么时？随机显示一种食物。">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>这餐吃什么</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #food-info {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>吃点什么</h1>
+    <select id="category">
+        <option value="all">所有分类</option>
+        <option value="snack">小吃</option>
+        <option value="supper">夜宵</option>
+        <option value="meal">正餐</option>
+        <option value="drink">饮品</option>
+        <option value="breakfast">早餐</option>
+    </select>
+    <button onclick="showFood()">点我</button>
+    <div id="food-info"></div>
+
+    <script src="foods.js"></script>
+</body>
+</html>
