@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="cn">
+
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="吃点什么？当你不知道这餐吃什么时？随机显示一种食物。">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>这餐吃什么</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 50px;
-    }
-    #food-info {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 18px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="description" content="不知道吃什么？问问小猫吧。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吃点什么，小猫告诉你</title>
+    <link rel="stylesheet" href="/style/style.css"> <!-- 引入外部样式表 -->
+    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/ico/favicon.ico">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCLNZX6N8K"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RCLNZX6N8K');
+</script>
+<header>
+    <img src="favicon.ico" alt="小猫图标"> <!-- 添加的图片 -->
+    <h3>吃点什么</h3>
+    
+</header>
 <body>
-    <h1>吃点什么</h1>
+    
+    <p>
+    <h2>不知道吃什么？问问小猫吧</h2>
+    </p>
     <select id="category">
+
         <option value="all">所有分类</option>
         <option value="snack">小吃</option>
         <option value="supper">夜宵</option>
@@ -35,9 +38,15 @@
         <option value="drink">饮品</option>
         <option value="breakfast">早餐</option>
     </select>
+
     <button onclick="showFood()">点我</button>
     <div id="food-info"></div>
 
+    
+
     <script src="foods.js"></script>
 </body>
+<footer>
+    <p>EatWhat &copy; 2024</p>
+</footer>
 </html>

@@ -1,0 +1,173 @@
+:root {
+    --width: 720px;  /* 页面最大宽度 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* 无边距 */
+    padding: 20px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    margin-top: 100px; /* 顶部间距 */
+    background-color: #f8f9fa;
+    width: 720px;  /* 页面最大宽度 */
+    margin: auto;  /* 自动居中 */
+    word-wrap: break-word;  /* 自动换行 */
+    overflow-wrap: break-word;  /* 自动换行 */
+}
+
+header {
+    background-color: #f8f9fa; /* 背景颜色 */
+    padding: 5px 0px; /* 内边距 */
+    position: fixed; /* 固定定位 */
+    top: 0px; /* 顶部固定 */
+    left: 0px; /* 左侧固定 */
+    right: 0px; /* 右侧固定 */
+    width: 100%; /* 宽度为 100% */
+    display: flex; /* 弹性布局 */
+    align-items: center; /* 居中对齐 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    padding-left: 30px; /* 左侧内边距 */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h3 {
+    margin: 0;
+    padding-left: 5px; /* 左侧内边距 */    
+}
+
+header p {
+    margin: 0;
+    text-align: right;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+h2 {
+    margin-top: 50px; /* 顶部间距 */
+}
+
+#food-info {
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 选择框样式 */
+select {
+    padding: 10px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 边框圆角 */
+    background-color: #007bff; /* 背景颜色 */
+    color: #fff; /* 文本颜色 */
+    cursor: pointer; /* 光标样式为手型 */
+    appearance: none; /* 隐藏默认样式 */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>'); /* 下拉箭头图标 */
+    background-repeat: no-repeat; /* 背景图像不重复 */
+    background-position: right 10px center; /* 图标位置 */
+    padding-right: 30px; /* 右侧内边距 */
+}
+
+/* 鼠标悬停样式 */
+select:hover {
+    border-color: #007bff; /* 边框颜色变为蓝色 */
+}
+
+/* 聚焦样式 */
+select:focus {
+    outline: none; /* 聚焦时去除外边框 */
+    border-color: #007bff; /* 边框颜色变为蓝色 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 聚焦时添加阴影效果 */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 按钮样式 */
+button {
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 边框圆角 */
+    background-color: #f8f9fa; /* 背景颜色 */
+    color: #333; /* 文本颜色 */
+    cursor: pointer; /* 光标样式为手型 */
+    appearance: none; /* 隐藏默认样式 */
+    background-repeat: no-repeat; /* 背景图像不重复 */
+    background-position: right 10px center; /* 图标位置 */
+    padding-right: 30px; /* 右侧内边距 */
+    transition: background-color 0.3s, box-shadow 0.3s; /* 过渡效果 */
+}
+
+/* 按钮悬停样式 */
+button:hover {
+    background-color: #007bff; /* 背景颜色变为蓝色 */
+    color: #fff; /* 文本颜色变为白色 */
+}
+
+/* 按钮聚焦样式 */
+button:focus {
+    outline: none; /* 聚焦时去除外边框 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 聚焦时添加阴影效果 */
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 鼠标悬停时的阴影效果 */
+}
+
+footer {
+    margin-top: 50px; /* 顶部间距 */
+    text-align: center; /* 文本居中 */
+    font-size: 14px; /* 字体大小 */
+    color: #999; /* 文本颜色 */
+    margin-top: 200px; /*底边间距*/
+}
+
+
+
