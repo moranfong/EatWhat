@@ -86,11 +86,13 @@ button:hover {
 }
 
 footer {
-    margin-top: 100px; /* 更改底部间距 */
-    text-align: center; /* 更改底部文本对齐方式 */
-    font-size: 0.8em; /* 更改底部字体大小 */
-    color: #999; /* 更改底部文本颜色 */;
-    position: fixed; /* 更改底部位置 */
-    bottom: 0; /* 更改底部位置 */
-    width: 100%; /* 更改底部宽度 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #999;
+    background-color: #f8f9fa; /* 添加背景色，便于查看 */
+    padding: 10px 0; /* 添加上下内边距 */
 }
