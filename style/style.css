@@ -14,52 +14,48 @@ body {
 }
 
 header {
-    background-color: #f8f9fa;
-    padding: 5px 0;
-    display: flex;
+    background-color: #f8f9fa; /*更改背景颜色*/
+    padding: 5px 0; /*更改内边距*/
+    display: flex; /*更改显示方式*/
     width: 100%; /* 宽度为100% */
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center; /*更改对齐方式*/
 }
 
 header img {
-    padding-left: 30px;
+    padding-left: 10px; /*更改内边距*/
 }
 
-
-
 header h3 {
-    margin: 0;
-    font-size: 1.3em;
-    padding-right: 30px;
+    margin: 0; /*更改外边距*/
+    font-size: 1.3em; /*更改字体大小*/
+    padding-left: 10px; /*更改外边距*/
 }
 
 header p {
-    margin: 0;
-    flex-grow: 1;
-    text-align: right;
-    margin-right: 10px;
-    font-size: 0.8em;
+    margin: 0; /*更改外边距*/
+    flex-grow: 1; /*更改宽度*/
+    text-align: right; /*更改文本对齐方式*/
+    margin-right: 10px; /*更改外边距*/
+    font-size: 0.8em; /*更改字体大小*/
 }
 
 h2 {
-    margin-top: 20px;
+    margin-top: 50px; /*更改外边距*/
 }
 
 #food-info {
-    font-size: 1em;
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em; /*更改字体大小*/
+    margin-top: 30px; /*更改外边距*/
+    background-color: #fff; /*更改背景颜色*/
+    padding: 25px; /*更改内边距*/
+    border-radius: 20px; /*更改边框圆角*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*更改阴影*/
 }
 
 select {
-    padding: 10px; /*更改内边距*/
+    padding: 10px 20px; /*更改内边距*/
     font-size: 1em; /*更改字体大小*/
-    border: 1px solid #ccc; /*更改边框颜色*/
+    border: 2px solid #007bff; /*更改边框颜色*/
     border-radius: 5px; /*更改边框圆角*/
     background-color: #f8f9fa; /*更改背景颜色*/
     color: #333; /*更改文本颜色*/
@@ -90,8 +86,11 @@ button:hover {
 }
 
 footer {
-    margin-top: 20px; /* 更改底部间距 */
+    margin-top: 100px; /* 更改底部间距 */
     text-align: center; /* 更改底部文本对齐方式 */
     font-size: 0.8em; /* 更改底部字体大小 */
-    color: #999; /* 更改底部文本颜色 */
+    color: #999; /* 更改底部文本颜色 */;
+    position: fixed; /* 更改底部位置 */
+    bottom: 0; /* 更改底部位置 */
+    width: 100%; /* 更改底部宽度 */
 }
