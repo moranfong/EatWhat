@@ -117,3 +117,9 @@ footer button {
 footer button:hover {
     text-decoration: none; /* 鼠标悬停时去除下划线 */
 }
+
+/* 导航栏透明 */
+nav {
+    background-color: transparent; /* 设置背景色为透明 */
+    backdrop-filter: blur(10px); /* 设置模糊效果 */
+}
