@@ -17,8 +17,17 @@ body {
 
 }
 
-body > * {
+body p {
+    width: 70%; /* 更改宽度 */
+    margin: 0 auto; /* 居中显示 */
+    padding: 10px; /* 控制边距 */
+    text-align: center; /* 文字居中 */
     margin-top: 10px; /* 添加顶部间距 */
+}
+
+
+body > * {
+    margin-top: 0px; /* 添加顶部间距 */
 }
 
 header {
