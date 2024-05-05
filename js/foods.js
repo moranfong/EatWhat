@@ -95,6 +95,6 @@ function changeLanguage(language) {
     if (language === "cn") {
         window.location.href = "/index.html"; // 将页面重定向到中文版本的网页
     } else if (language === "tw") {
-        window.location.href = "/index_tw.html"; // 将页面重定向到繁体中文版本的网页
+        window.location.href = "/tw.html"; // 将页面重定向到繁体中文版本的网页
     }
 }
