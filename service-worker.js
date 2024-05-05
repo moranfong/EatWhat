@@ -4,13 +4,19 @@ const filesToCache = [
   '/index.html',
   '/style/style.css',
   '/js/foods.js',
-  '/ico/favicon.png'
+  '/favicon.ico'
 ];
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
+      return cache.addAll(filesToCache)
+        .then(function() {
+          console.log('Files cached successfully');
+        })
+        .catch(function(error) {
+          console.error('Error caching files:', error);
+        });
     })
   );
 });
