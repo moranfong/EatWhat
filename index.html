@@ -10,8 +10,10 @@
     <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/ico/favicon.ico">
 </head>
-<!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCLNZX6N8K"></script>
+<link rel="manifest" href="/manifest.json">
+<!-- Google tag (gtag.js) -->
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -19,12 +21,24 @@
 
     gtag('config', 'G-RCLNZX6N8K');
 </script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }, function (err) {
+                console.log('Service Worker registration failed:', err);
+            });
+        });
+    }
+</script>
 <header>
     <img src="/images/blackcat.png" width="30" height="30" alt="LOGO"> <!-- 添加的图片 -->
     <h3>吃点什么</h3>
 </header>
+
 <body>
-    
+
     <p>
     <h2>不知道吃什么？问问小猫吧</h2>
     </p>
