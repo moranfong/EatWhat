@@ -4,7 +4,7 @@ var foods = [
     //夜宵
     { name: "炸鸡", info: "炸鸡富含蛋白质，但因为油炸过程，它也含有较高的脂肪和热量。如果食用过多，可能会导致不健康的体重增加。", category: "supper" },
     { name: "炸串", info: "炸串的营养价值取决于所选食材，通常含有蛋白质、维生素和矿物质，但油炸方式会增加脂肪含量。", category: "supper" },
-    { name: "烤串", info: "营养价值：烤肉串通常富含蛋白质，同时含有必需的氨基酸。烤制过程中可能会产生一些致癌物质，因此建议适量食用。", category: "supper" },
+    { name: "烧烤", info: "营养价值：烧烤通常富含蛋白质，同时含有必需的氨基酸。烤制过程中可能会产生一些致癌物质，因此建议适量食用。", category: "supper" },
     
     //正餐
     { name: "湘菜", info: "湘菜中常用辣椒和醋，这些成分有助于提高食欲和促进消化。但因为辣味，不适宜所有人，尤其是消化系统敏感的人。", category: "meal" },
@@ -34,7 +34,7 @@ var foods = [
     { name: "拉面", info: "拉面除了提供碳水化合物和蛋白质外，其汤底通常由骨头或肉熬制，富含胶原蛋白和氨基酸。", category: "breakfast" },
 
     //饮品
-    { name: "", info: "", category: "drink" },
+    { name: "IF椰子水", info: "IF椰子水强调其产品是100%纯正椰子水，不添加防腐剂，同时富含电解质，适合运动和恢复体力时饮用。", category: "drink" },
     { name: "红牛", info: "含有高咖啡因和牛磺酸的能量饮料，能够提供快速的能量补充，常被用来提神醒脑，但不建议过量饮用。", category: "drink" },
     { name: "雪碧", info: "柠檬味的碳酸饮料，口感清爽，带有淡淡的柠檬香味，是解渴和搭配快餐的常见选择。", category: "drink" },
     { name: "七喜", info: "柠檬-青柠味的碳酸饮料，透明液体，口味清新，常作为调酒的基底或夏日消暑饮品。", category: "drink" },
@@ -56,8 +56,25 @@ var foods = [
     { name: "炸饼", info: "炸饼含有较多的碳水化合物和脂肪，热量较高，应适量食用。", category: "snack" },
     { name: "炸薯条", info: "炸薯条含有较高的碳水化合物和脂肪，尤其是油炸后吸附的油脂，使得热量大幅增加。", category: "snack" },
     { name: "炸鸡", info: "炸鸡富含蛋白质，但由于油炸，含有较多的脂肪和热量。", category: "snack" },
-    { name: "锅贴", info: "锅贴含有蛋白质和碳水化合物，脂肪含量取决于肉馅的比例和煎制过程中使用的油脂量。", category: "snack" }
+    { name: "锅贴", info: "锅贴含有蛋白质和碳水化合物，脂肪含量取决于肉馅的比例和煎制过程中使用的油脂量。", category: "snack" },
     
+    //水果
+    { name: "橙子", info: "橙子是一种常见的水果，富含维生素C和纤维素，有助于增强免疫力和促进消化。", category: "fruit" },
+    { name: "苹果", info: "苹果是一种常见的水果，富含维生素C和膳食纤维，有助于降低胆固醇和控制血糖。", category: "fruit" },
+    { name: "香蕉", info: "香蕉是一种富含钾和膳食纤维的水果，有助于维持心脏健康和消化功能。", category: "fruit" },
+    { name: "梨子", info: "梨子是一种含水量高、营养丰富的水果，富含维生素和矿物质，有助于清热解毒和保护胃肠。", category: "fruit" },
+    { name: "葡萄", info: "葡萄是一种富含天然糖分和维生素的水果，有助于提供能量和营养。", category: "fruit" },
+    { name: "草莓", info: "草莓是一种富含维生素C和纤维素的水果，有助于美白皮肤和促进消化。", category: "fruit" },
+    { name: "樱桃", info: "樱桃是一种富含维生素和矿物质的水果，有助于提供能量和营养。", category: "fruit" },
+    { name: "桃子", info: "桃子是一种含水量高、营养丰富的水果，富含维生素和矿物质，有助于清热解毒和保护胃肠。", category: "fruit" },
+    { name: "西瓜", info: "西瓜是一种富含水分和维生素的水果，有助于解渴和提供营养。", category: "fruit" },
+    { name: "哈密瓜", info: "哈密瓜是一种含水量高、营养丰富的水果，富含维生素和矿物质，有助于清热解毒和保护胃肠。", category: "fruit" },
+    { name: "柚子", info: "柚子是一种富含维生素C和纤维素的水果，有助于提高免疫力和促进消化。", category: "fruit" },
+    { name: "菠萝", info: "菠萝是一种含有丰富维生素和酵素的水果，有助于消化和营养吸收。", category: "fruit" },
+    { name: "木瓜", info: "木瓜是一种含有丰富维生素和酵素的水果，有助于消化和营养吸收。", category: "fruit" },
+    { name: "李子", info: "李子是一种含水量高、营养丰富的水果，富含维生素和矿物质，有助于清热解毒和保护胃肠。", category: "fruit" },
+    { name: "椰子", info: "椰子是一种含水量高、营养丰富的水果，富含维生素和矿物质，有助于清热解毒和保护胃肠。", category: "fruit" },
+
 ];
 
 // 显示随机食物信息的函数
@@ -69,4 +86,15 @@ function showFood() {
     var randomIndex = Math.floor(Math.random() * filteredFoods.length);
     var food = filteredFoods[randomIndex];
     document.getElementById("food-info").innerHTML = "<b>" + food.name + "</b><br>" + food.info;
+}
+
+// 切换语言版本的函数
+function changeLanguage(language) {
+    var lagn = document.getElementById("language"); // 获取按钮元素
+    // 这里假设您有不同语言版本的网页，比如中文版本和英文版本
+    if (language === "cn") {
+        window.location.href = "/index.html"; // 将页面重定向到中文版本的网页
+    } else if (language === "tw") {
+        window.location.href = "/index_tw.html"; // 将页面重定向到繁体中文版本的网页
+    }
 }

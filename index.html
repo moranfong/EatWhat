@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh-Hans">
 
 <head>
     <meta charset="UTF-8">
@@ -20,9 +20,8 @@
     gtag('config', 'G-RCLNZX6N8K');
 </script>
 <header>
-    <img src="/images/blackcat.jpg" width="30" height="30" alt="LOGO"> <!-- 添加的图片 -->
+    <img src="/images/blackcat.png" width="30" height="30" alt="LOGO"> <!-- 添加的图片 -->
     <h3>吃点什么</h3>
-    
 </header>
 <body>
     
@@ -32,21 +31,23 @@
     <select id="category">
 
         <option value="all">所有分类</option>
-        <option value="snack">小吃</option>
-        <option value="supper">夜宵</option>
-        <option value="meal">正餐</option>
-        <option value="drink">饮品</option>
         <option value="breakfast">早餐</option>
+        <option value="meal">正餐</option>
+        <option value="supper">夜宵</option>
+        <option value="snack">小吃</option>
+        <option value="drink">饮品</option>
+        <option value="fruit">水果</option>
+
     </select>
 
     <button onclick="showFood()">点我</button>
     <div id="food-info"></div>
 
-    
-
-    <script src="foods.js"></script>
+    <script src="js/foods.js"></script>
 </body>
 <footer>
     <p>EatWhat &copy; 2024</p>
+    <button id="language" onclick="changeLanguage('tw')" style="float: right;">繁</button>
 </footer>
+
 </html>

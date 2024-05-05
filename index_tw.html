@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="不知道吃什麼？問問小貓吧。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吃點什麼，小貓告訴你</title>
+    <link rel="stylesheet" href="/style/style.css"> <!-- 引入外部樣式表 -->
+    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/ico/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="/images/blackcat.png" width="30" height="30" alt="LOGO"> <!-- 添加的圖片 -->
+        <h3>吃點什麼</h3>
+    </header>
+
+    <p>
+        <h2>不知道吃什麼？問問小貓吧</h2>
+    </p>
+    <select id="category">
+        <option value="all">所有分類</option>
+        <option value="breakfast">早餐</option>
+        <option value="meal">正餐</option>
+        <option value="supper">宵夜</option>
+        <option value="snack">小吃</option>
+        <option value="drink">飲品</option>
+        <option value="fruit">水果</option>
+    </select>
+
+    <button onclick="showFood()">點我</button>
+    <div id="food-info"></div>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCLNZX6N8K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RCLNZX6N8K');
+    </script>
+
+    <footer>
+        <p>EatWhat &copy; 2024</p>
+        <button id="language-btn" onclick="changeLanguage('tw')" style="float: right;">简</button>
+    </footer>
+
+    <script src="/js/foods_tw.js"></script>
+</body>
+
+</html>
