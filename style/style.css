@@ -11,6 +11,14 @@ body {
     padding: 20px; /*更改内边距*/
     text-align: center; /*更改文本对齐方式*/
     background-color: #f8f9fa; /*更改背景颜色*/
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    flex-direction: column; /* 垂直方向布局 */
+
+}
+
+body > * {
+    margin-top: 10px; /* 添加顶部间距 */
 }
 
 header {
@@ -54,7 +62,6 @@ h2 {
 select {
     padding: 10px 20px; /*更改内边距*/
     font-size: 1em; /*更改字体大小*/
-    border: 2px solid #007bff; /*更改边框颜色*/
     border-radius: 5px; /*更改边框圆角*/
     background-color: #f8f9fa; /*更改背景颜色*/
     color: #333; /*更改文本颜色*/
