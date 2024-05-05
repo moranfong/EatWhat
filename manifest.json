@@ -1,7 +1,7 @@
 {
     "name": "吃点什么，小猫告诉你",
     "short_name": "吃点什么",
-    "start_url": "/eatwhat.top/",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
