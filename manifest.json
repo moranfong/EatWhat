@@ -7,12 +7,12 @@
     "background_color": "#ffffff",
     "icons": [
       {
-        "src": "/images/blackcat.png",
+        "src": "/images/blackcat.jpg",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/images/blackcat.png",
+        "src": "/images/blackcat.jpg",
         "sizes": "512x512",
         "type": "image/png"
       }
