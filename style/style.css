@@ -71,15 +71,15 @@ h2 {
 select {
     padding: 10px 20px; /*更改内边距*/
     font-size: 1em; /*更改字体大小*/
-    border-radius: 5px; /*更改边框圆角*/
+    border-radius: 10px; /*更改边框圆角*/
     background-color: #f8f9fa; /*更改背景颜色*/
     color: #333; /*更改文本颜色*/
-    cursor: pointer; /*更改鼠标悬停时的光标形状*/
     appearance: none; /*去除默认的下拉箭头*/
     background-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
     background-repeat: no-repeat; /*去除默认的下拉箭头*/
     background-position: right 10px center; /*更改下拉箭头的位置*/
     padding-right: 30px; /*更改下拉箭头的宽度*/
+    cursor: pointer; /*更改鼠标悬停时的光标形状*/
 }
 
 button {
@@ -88,7 +88,7 @@ button {
     border: none; /*去除按钮边框*/
     cursor: pointer; /*更改鼠标悬停时的光标形状*/
     margin-top: 20px; /*更改外边距*/ 
-    border-radius: 4px; /*更改边框圆角*/ 
+    border-radius: 10px; /*更改边框圆角*/ 
     background-color: #000000; /* 更改按钮颜色 */
     color: #fff; /* 更改按钮文本颜色 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 更改按钮阴影 */
