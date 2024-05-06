@@ -1,7 +1,7 @@
 const cacheName = 'your-app-name-v1';
 const filesToCache = [
   '/',
-  '/Ahiib/ahiib.html',
+  '/Ahiib/canteen.html',
   '/Ahiib/style.css',
   '/Ahiib/ahiib.js',
   '/favicon.ico'
