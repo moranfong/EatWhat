@@ -7,10 +7,17 @@ var foods = [
     { name: "烧烤", info: "", category: "First" },
     
     //食堂二楼
-    { name: "面馆", info: "", category: "Second" },
-    { name: "凉皮凉面鸡锁骨", info: "", category: "Second" },
-    { name: "套餐饭", info: "", category: "Second" },
-    { name: "鲁瓦罐汤拌饭", info: "", category: "Second" },
+    { name: "瓦罐汤拌饭", info: "", category: "Second" },
+    { name: "麻辣烫 麻辣拌", info: "", category: "Second" },
+    { name: "自选东北菜", info: "", category: "Second" },
+    { name: "一品香套餐饭", info: "", category: "Second" },
+    { name: "重庆小面", info: "", category: "Second" },
+    { name: "烤盘饭", info: "", category: "Second" },
+    { name: "螺仙堡螺丝粉", info: "", category: "Second" },
+    { name: "烤肉饭", info: "", category: "Second" },
+    { name: "特色馄饨", info: "", category: "Second" },
+    { name: "石锅咕咕鸡", info: "", category: "Second" },
+    { name: "中式精选快餐", info: "", category: "Second" },
 
     //新食堂一楼
     { name: "张亮麻辣烫", info: "有天水麻辣烫、麻辣香锅、经典骨汤等味道等味道。但需要注意汤底的油脂和辛辣成分可能不适合所有人。", category: "New_First" },
