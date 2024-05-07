@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="在安商吃什么不知道吃什么">
     <meta name="theme-color" content="#f8f9fa">
     <meta name="apple-mobile-web-app-status-bar-style" content="#f8f9fa" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>安商院食堂助手</title>
-    <meta name="keywords" content="在安徽国际商务职业学院吃什么，吃点什么，今天吃什么, 今天中午吃什么, 今天早饭吃什么, 今天晚饭吃什么, 今天午饭吃什么" />
+    <meta name="keywords" content="安商院食堂助手，安徽国际商务职业学院食堂助手，吃点什么，今天吃什么, 今天中午吃什么, 今天早饭吃什么, 今天晚饭吃什么, 今天午饭吃什么" />
     <meta name="description" content="吃点什么？这是一个很无聊的工具，但能解决你在饭点时的一大困扰！选择困难户必备！" />
     <link rel="stylesheet" href="/ahiib/style.css"> <!-- 引入外部样式表 -->
     <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
@@ -25,7 +24,7 @@
     <h2>在安商院，饭点却不知道吃什么？</h2>
     </p>
     <p>
-        先选择你所在的食堂，然后点击“吃什么”
+        选择你想去的食堂，然后点击“吃”
     </p>
 
     <select id="category">
@@ -35,9 +34,10 @@
         <option value="Second">食堂二楼</option>
         <option value="New_First">新食堂一楼</option>
         <option value="New_Second">新食堂二楼</option>
+        <option value="Outside">校外</option>
 
     </select>
-    <button onclick="showFood()">吃什么</button>
+    <button onclick="showFood()">吃</button>
     <div id="food-info"></div>
 
     <p>“安商院食堂助手”是一款专为解决安商学子日常饮食选择困扰的应用。在繁忙的学业生活中，很多人都面临着每天都不知道吃什么的困境。这款小工具旨在为您提供个性化的饮食建议，让您轻松规划每一餐。</p>
@@ -68,6 +68,10 @@
         }
     </script>
     <script src="/ahiib/ahiib.js"></script>
+    <div>
+        <p><a href="/index.html">吃点什么</a></p>
+        <p><a href="/ahiib/index.html">安商院食堂助手</a></p>
+    </div>
 </body>
 
 </html>
