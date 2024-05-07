@@ -25,6 +25,33 @@ body p {
     margin-top: 10px; /* 添加顶部间距 */
 }
 
+a {
+    color: #333;
+    /*更改文本颜色*/
+    cursor: pointer;
+    background-color: #bdc3c7;
+    /* 更改按钮颜色 */
+    padding: 10px 20px;
+    /*更改内边距*/
+    font-size: 0.8em;
+    /*更改字体大小*/
+    border: none;
+    /*去除按钮边框*/
+    cursor: pointer;
+    /*更改鼠标悬停时的光标形状*/
+    margin-top: 10px;
+    /*更改外边距*/
+    border-radius: 30px;
+    /*更改边框圆角*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 更改按钮阴影 */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* 更改按钮动画 */
+    text-decoration: none;
+    /* 去除下划线 */
+    min-height: 100%;
+
+}
 
 body > * {
     margin-top: 0px; /* 添加顶部间距 */
