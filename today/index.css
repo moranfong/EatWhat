@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+}
+
+.container div, .box .mdui-btn, .mdui-chip, #retry {
+    margin-bottom: 15px;
+}
+
+#btn-2, #btn-1 {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    /*更改内边距*/
+    font-size: 1em;
+    /*更改字体大小*/
+    border: none;
+    /*去除按钮边框*/
+    cursor: pointer;
+    /*更改鼠标悬停时的光标形状*/
+    margin-top: 20px;
+    /*更改外边距*/
+    border-radius: 10px;
+    /*更改边框圆角*/
+    background-color: #000000;
+    /* 更改按钮颜色 */
+    color: #fff;
+    /* 更改按钮文本颜色 */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* 更改按钮动画 */
+}
+
+button:hover {
+    background-color: #333;
+    /* 更改按钮颜色 */
+}
+
+.btn-2, #retry {
+    display: none;
+}
+
+#retry {
+    width: auto;
+}
+
+.footer-box {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+a, span {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: .25s;
+}
+
+/*新增*/ 
+header {
+    padding: 5px 0;
+    /*更改内边距*/
+    display: flex;
+    /*更改显示方式*/
+    border-bottom: 0.5px solid #999;
+    /* 更改边框 */
+    width: 90%; /* 页面最大宽度 */
+    margin: auto /* 居中显示 */
+    
+}
+
+header img {
+    padding-left: 10px;
+    /*更改内边距*/
+}
+
+header h3 {
+    margin: 0;
+    /*更改外边距*/
+    font-size: 1.3em;
+    /*更改字体大小*/
+    padding-left: 10px;
+    /*更改外边距*/
+}
+
+.header {
+    text-decoration: none;
+    color: #333;
+}
