@@ -2,86 +2,51 @@
 
 :root {
     --font-main: 'Google Sans', sans-serif;
-    /*更改字体*/
-    --width: 100%;
-    /* 页面最大宽度 */
 }
 
 body {
-    font-family: 'Google Sans', Arial, sans-serif;
-    /*更改字体*/
+    font-family: var(--font-main), Arial, sans-serif;
     margin: 0;
-    /*更改外边距*/
     padding: 20px;
-    /*更改内边距*/
     text-align: center;
-    /*更改文本对齐方式*/
     background-color: #f8f9fa;
-    /*更改背景颜色*/
-    align-items: center;
-    /* 水平居中 */
-    justify-content: center;
-    /* 垂直居中 */
+    display: flex;
     flex-direction: column;
-    /* 垂直方向布局 */
-
+    min-height: 100vh;
 }
 
 .p {
     width: 100%;
-    /* 更改宽度 */
     margin: 0 auto;
-    /* 居中显示 */
     padding: 10px;
-    /* 控制边距 */
     text-align: center;
-    /* 文字居中 */
     margin-top: 10px;
-    /* 添加顶部间距 */
 }
 
 .a {
     font-size: 12px;
     color: #999;
-    /*更改文本颜色*/
-    
-    /* 去除下划线 */
-    min-height: 100%;
-
-}
-
-body>* {
-    margin-top: 0px;
-    /* 添加顶部间距 */
+    text-decoration: none;
 }
 
 header {
     background-color: #f8f9fa;
-    /*更改背景颜色*/
     padding: 5px 0;
-    /*更改内边距*/
     display: flex;
-    /*更改显示方式*/
-    width: 100%;
-    /* 宽度为100% */
+    justify-content: center; /* 使header内容水平居中 */
+    align-items: center; /* 使header内容垂直居中 */
+    width: var(--width);
     border-bottom: 0.5px solid #999;
-    /* 更改边框 */
-    width: 90%; /* 页面最大宽度 */
-    margin: auto /* 居中显示 */
 }
 
 header img {
     padding-left: 10px;
-    /*更改内边距*/
 }
 
 header h3 {
     margin: 0;
-    /*更改外边距*/
     font-size: 1.3em;
-    /*更改字体大小*/
     padding-left: 10px;
-    /*更改外边距*/
 }
 
 .header {
@@ -91,111 +56,74 @@ header h3 {
 
 h2 {
     margin-top: 50px;
-    /*更改外边距*/
 }
 
-#food-info {
-    font-size: 1em;
-    /*更改字体大小*/
-    margin-top: 30px;
-    /*更改外边距*/
-    background-color: #fff;
-    /*更改背景颜色*/
-    padding: 25px;
-    /*更改内边距*/
-    border-radius: 25px;
-    /*更改边框圆角*/
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /*更改阴影*/
-    width: 70%;
-    /* 更改宽度 */
-    margin: auto;
-    /* 居中显示 */
-    margin-top: 20px; /* 添加顶部间距 */
-}
-
-select {
-    padding: 10px 20px;
-    /*更改内边距*/
-    font-size: 1em;
-    /*更改字体大小*/
-    border-radius: 10px;
-    /*更改边框圆角*/
-    background-color: #f8f9fa;
-    /*更改背景颜色*/
-    color: #333;
-    /*更改文本颜色*/
-    appearance: none;
-    /*去除默认的下拉箭头*/
-    background-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
-    background-repeat: no-repeat;
-    /*去除默认的下拉箭头*/
-    background-position: right 10px center;
-    /*更改下拉箭头的位置*/
-    padding-right: 30px;
-    /*更改下拉箭头的宽度*/
-    cursor: pointer;
-    /*更改鼠标悬停时的光标形状*/
-}
-
-button {
-    padding: 10px 20px;
-    /*更改内边距*/
-    font-size: 1em;
-    /*更改字体大小*/
-    border: none;
-    /*去除按钮边框*/
-    cursor: pointer;
-    /*更改鼠标悬停时的光标形状*/
-    margin-top: 20px;
-    /*更改外边距*/
-    border-radius: 10px;
-    /*更改边框圆角*/
-    background-color: #000000;
-    /* 更改按钮颜色 */
-    color: #fff;
-    /* 更改按钮文本颜色 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* 更改按钮阴影 */
-    transition: background-color 0.3s, box-shadow 0.3s;
-    /* 更改按钮动画 */
-}
-
-button:hover {
-    background-color: #333;
-    /* 更改按钮颜色 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* 更改按钮阴影 */
-}
-
+/* footer样式修正，使用flex布局将footer推至底部 */
 footer {
-    position: flex;
-    left: 0;
-    right: 0;
+    margin-top: auto; /* 将footer推至底部 */
+    padding: 10px 0;
     text-align: center;
     font-size: 0.8em;
     color: #999;
-    padding: 15px 0; /* 添加上下内边距 */
-    height: 60px;
-    margin-top: 200px;
-    width: 100%; /* 页面最大宽度 */
+    width: 100%;
 }
 
-footer button {
-    margin-left: 10px;
-    margin-right: 10px;
+/* 按钮样式，独立于footer */
+button, .btn {
+    padding: 8px 15px;
+    margin-top: 10px;
     border: none;
+    border-radius: 5px;
+    background-color: #121212;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 1em;
-    background-color: transparent;
-    /* 设置背景颜色为透明 */
-    color: #333;
-    /* 设置文字颜色 */
     outline: none;
-    /* 去除点击时的虚线框 */
+    display: block; /* 使按钮宽度可以设置为百分比 */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer button:hover {
-    text-decoration: none;
-    /* 鼠标悬停时去除下划线 */
+button:hover {
+    background-color: #888;
+}
+
+/* 重置select的默认样式 */
+#category {
+    margin: 10px 0;
+    padding: 7px 30px 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    
+    width: 70%; /* 设置select宽度为父容器的70% */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#category option {
+    padding: 5px;
+    color: #121212;
+    background-color: #f9f9f9;
+}
+
+#category:focus {
+    border-color: #666;
+    outline: none;
+}
+
+/* 显示食物信息的div样式 */
+#food-info {
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-height: 80px;
+    width: 70%; /* 设置#food-info宽度为父容器的70% */
+    margin-left: auto;
+    margin-right: auto;
 }
