@@ -5,7 +5,10 @@ var foods = [
     { name: "炸鸡", info: "炸鸡富含蛋白质，但因为油炸过程，它也含有较高的脂肪和热量。如果食用过多，可能会导致不健康的体重增加。", category: "supper" },
     { name: "炸串", info: "炸串的营养价值取决于所选食材，通常含有蛋白质、维生素和矿物质，但油炸方式会增加脂肪含量。", category: "supper" },
     { name: "烧烤", info: "营养价值：烧烤通常富含蛋白质，同时含有必需的氨基酸。烤制过程中可能会产生一些致癌物质，因此建议适量食用。", category: "supper" },
-    
+    { name: "小龙虾", info: "", category: "supper" },
+    { name: "汉堡", info: "", category: "supper" },
+    { name: "泡菜", info: "", category: "supper" },
+
     //正餐
     { name: "湘菜", info: "湘菜中常用辣椒和醋，这些成分有助于提高食欲和促进消化。但因为辣味，不适宜所有人，尤其是消化系统敏感的人。", category: "meal" },
     { name: "川菜", info: "川菜使用了大量的辣椒和花椒，这些成分有助于促进血液循环和食欲。然而，川菜的高油和高盐特性可能对健康造成影响。", category: "meal" },
@@ -46,7 +49,11 @@ var foods = [
     { name: "馄饨", info: "馄饨富含蛋白质和碳水化合物，肉馅提供了必需的氨基酸和脂肪，而面皮则是能量的来源。", category: "breakfast" },
     { name: "面条", info: "面条主要提供碳水化合物，是能量的重要来源。搭配不同的佐料和配菜，可以增加蛋白质、维生素和矿物质的摄入。", category: "breakfast" },
     { name: "刀削面", info: "刀削面主要由小麦粉制成，富含碳水化合物和蛋白质，搭配不同的卤汁或汤料，可以提供更全面的营养。", category: "breakfast" },
-    { name: "拉面", info: "拉面除了提供碳水化合物和蛋白质外，其汤底通常由骨头或肉熬制，富含胶原蛋白和氨基酸。", category: "breakfast" },
+    { name: "小笼包", info: "", category: "breakfast" },
+    { name: "鸭血粉丝汤", info: "", category: "breakfast" },
+    { name: "热干面", info: "", category: "breakfast" },
+    { name: "拉面", info: "", category: "breakfast" },
+    { name: "水饺", info: "", category: "breakfast" },
 
     //饮品
     { name: "IF椰子水", info: "IF椰子水强调其产品是100%纯正椰子水，不添加防腐剂，同时富含电解质，适合运动和恢复体力时饮用。", category: "drink" },
