@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans&display=swap');
-
-:root {
-    --font-main: 'Google Sans', sans-serif;
-}
-
 body {
-    font-family: var(--font-main), Arial, sans-serif;
+    font-family: 'Google Sans', sans-serif;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -31,12 +25,28 @@ body {
 
 header {
     background-color: #f8f9fa;
-    padding: 5px 0;
-    display: flex;
-    justify-content: center; /* 使header内容水平居中 */
-    align-items: center; /* 使header内容垂直居中 */
-    width: var(--width);
+    padding: 5px 2px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    width: 100%;
     border-bottom: 0.5px solid #999;
+}
+
+.header-left {
+    display: flex; /* 弹性布局 */
+    align-items: center; /* 水平居中 */
+}
+
+.header-right {
+    text-align: right; /* 右对齐 */
+}
+
+.header-right p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    padding-right: 10px;
 }
 
 header img {
@@ -58,9 +68,8 @@ h2 {
     margin-top: 50px;
 }
 
-/* footer样式修正，使用flex布局将footer推至底部 */
 footer {
-    margin-top: auto; /* 将footer推至底部 */
+    margin-top: auto;
     padding: 10px 0;
     text-align: center;
     font-size: 0.8em;
@@ -68,10 +77,9 @@ footer {
     width: 100%;
 }
 
-/* 按钮样式，独立于footer */
 button, .btn {
     padding: 8px 15px;
-    margin-top: 10px;
+    margin: 10px auto;
     border: none;
     border-radius: 5px;
     background-color: #121212;
@@ -79,29 +87,22 @@ button, .btn {
     font-size: 16px;
     cursor: pointer;
     outline: none;
-    display: block; /* 使按钮宽度可以设置为百分比 */
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 button:hover {
     background-color: #888;
 }
 
-/* 重置select的默认样式 */
 #category {
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 7px 30px 7px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
     color: #333;
     font-size: 16px;
-    
-    width: 70%; /* 设置select宽度为父容器的70% */
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
 }
 
 #category option {
@@ -115,15 +116,13 @@ button:hover {
     outline: none;
 }
 
-/* 显示食物信息的div样式 */
 #food-info {
     margin-top: 25px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
-    min-height: 80px;
-    width: 70%; /* 设置#food-info宽度为父容器的70% */
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 100px;
+    width: 70%;
+    margin: 10px auto;
 }
