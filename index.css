@@ -85,11 +85,9 @@ header {
     /*更改内边距*/
     display: flex;
     /*更改显示方式*/
-    border-bottom: 0.5px solid #999;
-    /* 更改边框 */
     width: 90%; /* 页面最大宽度 */
     margin: auto /* 居中显示 */
-    
+   
 }
 
 header img {

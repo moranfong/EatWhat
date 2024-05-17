@@ -1,82 +1,75 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>吃点什么-不知道吃什么？小猫告诉你</title>
-    <meta name="description" content="吃点什么，不知道吃什么？问问小猫吧。">
-    <meta name="theme-color" content="#f8f9fa">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#f8f9fa" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://www.eatwhat.top">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/ico/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="不知道吃什么？问问小猫吧。选择吃什么，一直是人类难以解决的问题……"> 
+    <!-- mdui --> 
+    <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css" rel="stylesheet">
+    <!-- 主样式 -->
+    <link href="/index.css" rel="stylesheet">
+    <!-- axios -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <!-- mdui js -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <!-- 主js -->
+    <script src="/index.js"></script>
     <meta name="baidu-site-verification" content="codeva-mESkVODsM7">
     <meta name="shenma-site-verification" content="dcfc347f90a839ed92ecb100cf5e5543_1715498776">
     <meta name="360-site-verification" content="4ba579ad19d52eb1649e88a30d009b59">
+         
+        
+    <title>不知道吃什么？小猫告诉你</title>
 </head>
+<header>
+    <img src="/images/blackcat.png" width="30" height="30" alt="LOGO"> <!-- 添加的图片 -->
 
+</header>
 <body>
-
-    <header>
-        <div class="header-left">
-            <img src="/images/blackcat.png" width="30" height="30" alt="LOGO">
-            <h3><a href="/" class="header">吃点什么</a></h3>
+    <div class="container">
+        <div class="mdui-typo-display-2" id="title">今天吃什么</div>
+        <div class="mdui-typo-title-opacity">似乎是一个人类极为难以解决的问题。</div>
+        <div class="btn-1 box" id="btn-1">
+            <button onclick="start('food')" >吃什么？</button>
+            <button onclick="start('drink')" >喝什么？</button>
         </div>
-        <div class="header-right">
-            <p><a href="https://fmoran.me">博客</a></p>
+        <div class="btn-2 box" id="btn-2">
+            <div class="mdui-chip">
+                <span class="mdui-chip-title" id="str">占位符</span>
+            </div>
+            <button onclick="stop()" id="stop">就它了</button>
         </div>
-    </header>
-    
-
-    <p>
-        <h1>不知道吃什么？问问小猫吧</h1>
-    </p>
-    <select id="category">
-
-        <option value="all">所有分类</option>
-        <option value="breakfast">早餐</option>
-        <option value="meal">正餐</option>
-        <option value="supper">夜宵</option>
-        <option value="snack">小吃</option>
-        <option value="drink">饮品</option>
-        <option value="fruit">水果</option>
-
-    </select>
-    <button onclick="showFood()">点我</button>
-    <div id="food-info"></div>
-
-    <script src="foods.js" defer></script>
-    <p class="p">这似乎是一个人类极为难以解决的问题。</p>
-    <footer>
-        <section>
-            <a href="https://fmoran.me" class="a" rel="noopener">作者博客</a>
-            <p>© 2024 eatwhat.top</p>
-        </section>
-    </footer>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCLNZX6N8K"></script>
-    <link rel="manifest" href="/manifest.json">
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-RCLNZX6N8K');
-    </script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                }, function (err) {
-                    console.log('Service Worker registration failed:', err);
-                });
-            });
-        }
-    </script>
+        <button id="retry" onclick="retry()">不行，换一个</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="footer-box">
+            <span>吃点什么？ By <a href="https://fmoran.me" class="a">FMoran</a></span>
+            <br>
+            <a href="https://eatwhat.top">©EatWhat 2024</a>
+        </div>
+    </div>
+    <div class="mdui-dialog" id="dialog">
+        <div class="mdui-dialog-title">你怎么还抽？</div>
+        <div class="mdui-dialog-content" id="info">info</div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>行吧</button>
+        </div>
+    </div>
 </body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCLNZX6N8K"></script>
+<link rel="manifest" href="/manifest.json">
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }, function (err) {
+                console.log('Service Worker registration failed:', err);
+            });
+        });
+    }
+</script>
 </html>
