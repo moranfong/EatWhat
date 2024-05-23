@@ -108,17 +108,10 @@ header h3 {
     border-radius: 8px;
     overflow: hidden;
     background-color: #f9f9f9; /* 更改背景颜色 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
     animation: fadeInDown 0.5s ease;
 }
 
-.mdui-dialog-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #333;
-    background-color: #333;
-    padding: 16px;
-}
+
 
 .mdui-dialog-content {
     padding: 16px;
@@ -134,7 +127,7 @@ header h3 {
 
 .mdui-dialog-actions .mdui-btn {
     margin: 0 4px;
-    background-color: #007bff; /* 按钮背景颜色 */
+    background-color: #000000; /* 按钮背景颜色 */
     color: white; /* 按钮文字颜色 */
     border-radius: 5px; /* 按钮圆角 */
     border: none; /* 移除按钮边框 */
@@ -142,7 +135,7 @@ header h3 {
 }
 
 .mdui-dialog-actions .mdui-btn:hover {
-    background-color: #0056b3; /* 悬停时的背景颜色 */
+    background-color: #333; /* 悬停时的背景颜色 */
 }
 
 /* 新增动画效果 */

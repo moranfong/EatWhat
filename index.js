@@ -32,7 +32,6 @@ window.onload = () => {
             food = res.data.food;
             drink = res.data.drink;
         });
-    // 没写如果获取不到咋办
 };
 
 // 随机
