@@ -38,19 +38,19 @@ body {
 }
 
 button {
-    padding: 10px 20px; /*更改内边距*/
-    font-size: 1em; /*更改字体大小*/
-    border: none; /*去除按钮边框*/
-    cursor: pointer; /*更改鼠标悬停时的光标形状*/
-    margin-top: 20px; /*更改外边距*/
-    border-radius: 10px; /*更改边框圆角*/
-    background-color: #000000; /*更改按钮颜色*/
-    color: #fff; /*更改按钮文本颜色*/
-    transition: background-color 0.3s, box-shadow 0.3s; /*更改按钮动画*/
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    transition: background-color var(--transition-duration), box-shadow var(--transition-duration);
 }
 
 button:hover {
-    background-color: #333; /*更改按钮颜色*/
+    background-color: var(--button-hover-bg-color);
 }
 
 .btn-2, #retry {
@@ -66,7 +66,7 @@ button:hover {
     bottom: 10px;
     left: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--footer-font-size);
     text-align: center;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -76,27 +76,26 @@ button:hover {
 
 a, span {
     text-decoration: none;
-    color: rgba(0,0,0,0.6);
+    color: var(--link-color);
     cursor: pointer;
     transition: .25s;
 }
 
-/*新增*/ 
 header {
-    padding: 5px 0; /*更改内边距*/
-    display: flex; /*更改显示方式*/
-    width: 90%; /* 页面最大宽度 */
-    margin: auto; /* 居中显示 */
+    padding: var(--header-padding);
+    display: flex;
+    width: 90%;
+    margin: auto;
 }
 
 header img {
-    padding-left: 10px; /*更改内边距*/
+    padding-left: 10px;
 }
 
 header h3 {
-    margin: 0; /*更改外边距*/
-    font-size: 1.3em; /*更改字体大小*/
-    padding-left: 10px; /*更改外边距*/
+    margin: 0;
+    font-size: var(--header-font-size);
+    padding-left: 10px;
 }
 
 .header {
@@ -106,28 +105,54 @@ header h3 {
 
 /* 弹出框优化 */
 .mdui-dialog {
-    border-radius: 8px; /* 更改边框圆角 */
-    overflow: hidden; /* 隐藏溢出内容 */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9; /* 更改背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    animation: fadeInDown 0.5s ease;
 }
 
 .mdui-dialog-title {
-    font-size: 1.5em; /* 更改字体大小 */
-    color: #ffffff; /* 更改字体颜色 */
-    background-color: #333; /* 更改背景颜色 */
-    padding: 16px; /* 更改内边距 */
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    background-color: #333;
+    padding: 16px;
 }
 
 .mdui-dialog-content {
-    padding: 16px; /* 更改内边距 */
-    font-size: 1em; /* 更改字体大小 */
+    padding: 16px;
+    font-size: 1.2em;
+    color: #666;
 }
 
 .mdui-dialog-actions {
-    background-color: #f5f5f5; /* 更改背景颜色 */
-    padding: 8px; /* 更改内边距 */
-    text-align: right; /* 文字右对齐 */
+    background-color: #f5f5f5;
+    padding: 8px;
+    text-align: right;
 }
 
 .mdui-dialog-actions .mdui-btn {
-    margin: 0 4px; /* 更改外边距 */
+    margin: 0 4px;
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border-radius: 5px; /* 按钮圆角 */
+    border: none; /* 移除按钮边框 */
+    transition: background-color 0.3s; /* 悬停时颜色变化动画 */
+}
+
+.mdui-dialog-actions .mdui-btn:hover {
+    background-color: #0056b3; /* 悬停时的背景颜色 */
+}
+
+/* 新增动画效果 */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
