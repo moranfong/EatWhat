@@ -1,9 +1,21 @@
+:root {
+    --button-bg-color: #000000;
+    --button-hover-bg-color: #333;
+    --button-text-color: #fff;
+    --footer-font-size: 14px;
+    --link-color: rgba(0, 0, 0, 0.6);
+    --header-padding: 5px 0;
+    --header-font-size: 1.3em;
+    --margin-bottom: 15px;
+    --transition-duration: 0.3s;
+}
+
 body {
     text-align: center;
 }
 
 .container div, .box .mdui-btn, .mdui-chip, #retry {
-    margin-bottom: 15px;
+    margin-bottom: var(--margin-bottom);
 }
 
 #btn-2, #btn-1 {
@@ -27,28 +39,18 @@ body {
 
 button {
     padding: 10px 20px;
-    /*更改内边距*/
     font-size: 1em;
-    /*更改字体大小*/
     border: none;
-    /*去除按钮边框*/
     cursor: pointer;
-    /*更改鼠标悬停时的光标形状*/
     margin-top: 20px;
-    /*更改外边距*/
     border-radius: 10px;
-    /*更改边框圆角*/
-    background-color: #000000;
-    /* 更改按钮颜色 */
-    color: #fff;
-    /* 更改按钮文本颜色 */
-    transition: background-color 0.3s, box-shadow 0.3s;
-    /* 更改按钮动画 */
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    transition: background-color var(--transition-duration), box-shadow var(--transition-duration);
 }
 
 button:hover {
-    background-color: #333;
-    /* 更改按钮颜色 */
+    background-color: var(--button-hover-bg-color);
 }
 
 .btn-2, #retry {
@@ -64,7 +66,7 @@ button:hover {
     bottom: 10px;
     left: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--footer-font-size);
     text-align: center;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -74,37 +76,40 @@ button:hover {
 
 a, span {
     text-decoration: none;
-    color: rgba(0,0,0,0.6);
+    color: var(--link-color);
     cursor: pointer;
-    transition: .25s;
+    transition: color var(--transition-duration);
 }
 
-/*新增*/ 
 header {
-    padding: 5px 0;
-    /*更改内边距*/
+    padding: var(--header-padding);
     display: flex;
-    /*更改显示方式*/
-    width: 90%; /* 页面最大宽度 */
-    margin: auto /* 居中显示 */
-   
+    width: 90%;
+    margin: auto;
 }
 
 header img {
     padding-left: 10px;
-    /*更改内边距*/
 }
 
 header h3 {
     margin: 0;
-    /*更改外边距*/
-    font-size: 1.3em;
-    /*更改字体大小*/
+    font-size: var(--header-font-size);
     padding-left: 10px;
-    /*更改外边距*/
 }
 
 .header {
     text-decoration: none;
-    color: #333;
+    color: var(--button-hover-bg-color);
+}
+
+@media (max-width: 600px) {
+    button {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+
+    header h3 {
+        font-size: 1em;
+    }
 }
