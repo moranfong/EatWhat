@@ -1,30 +1,23 @@
-const cacheName = 'your-app-name-v1';
+const cacheName = 'eatwhat-v1';
 const filesToCache = [
   '/',
   '/index.html',
   '/index.css',
   '/index.js',
-  '/db.json',
-  '/ico/favicon.ico'
+  '/images/blackcat.png'
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache)
-        .then(function() {
-          console.log('Files cached successfully');
-        })
-        .catch(function(error) {
-          console.error('Error caching files:', error);
-        });
+    caches.open(cacheName).then(cache => {
+      return cache.addAll(filesToCache);
     })
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(response => {
       return response || fetch(event.request);
     })
   );

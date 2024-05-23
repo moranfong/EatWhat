@@ -90,11 +90,3 @@ function randomNum(minNum,maxNum){
     };
 };
 
-// PWA
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-      console.log('Service Worker 注册成功:', registration);
-    }, function(error) {
-      console.error('Service Worker 注册失败:', error);
-    });
-  }
