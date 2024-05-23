@@ -4,6 +4,7 @@ const filesToCache = [
   '/index.html',
   '/index.css',
   '/index.js',
+  '/db.json',
   '/ico/favicon.ico'
 ];
 
