@@ -2,9 +2,9 @@ const cacheName = 'your-app-name-v1';
 const filesToCache = [
   '/',
   '/index.html',
-  '/style/style.css',
-  '/js/foods.js',
-  '/favicon.ico'
+  '/index.css',
+  '/index.js',
+  '/ico/favicon.ico'
 ];
 
 self.addEventListener('install', function(event) {
