@@ -25,7 +25,6 @@ window.onload = () => {
     infoBox = document.getElementById('info');
     inst = new mdui.Dialog('#dialog');
 
-
     // 获取列表
     axios
         .get('db.json')
@@ -34,8 +33,6 @@ window.onload = () => {
             drink = res.data.drink;
         });
     // 没写如果获取不到咋办
-
-
 };
 
 // 随机
@@ -50,14 +47,14 @@ const start = (what) => {
             infoBox.innerHTML = "我看你啥都别喝了！";
             break;
     };
-    if (count>=3) {
+    if (count >= 3) {
         inst.open();
         return;
     };
     count++;
     interval = setInterval(()=>{
-        num = randomNum(0, tempAry.length-1);
-        str.innerHTML = tempAry[num]
+        num = randomNum(0, tempAry.length - 1);
+        str.innerHTML = tempAry[num];
     }, 50);
     type = what;
     btnBox2.style.display = "flex";
@@ -79,14 +76,13 @@ const retry = () => {
 };
 
 // 随机数
-function randomNum(minNum,maxNum){ 
-    switch(arguments.length){ 
+function randomNum(minNum, maxNum) { 
+    switch (arguments.length) { 
         case 1: 
-            return parseInt(Math.random()*minNum+1,10); 
+            return parseInt(Math.random() * minNum + 1, 10); 
         case 2: 
-            return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+            return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10); 
         default: 
             return 0; 
     };
 };
-

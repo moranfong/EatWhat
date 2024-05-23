@@ -15,7 +15,7 @@ body {
 }
 
 .container div, .box .mdui-btn, .mdui-chip, #retry {
-    margin-bottom: var(--margin-bottom);
+    margin-bottom: 15px;
 }
 
 #btn-2, #btn-1 {
@@ -38,19 +38,19 @@ body {
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    transition: background-color var(--transition-duration), box-shadow var(--transition-duration);
+    padding: 10px 20px; /*更改内边距*/
+    font-size: 1em; /*更改字体大小*/
+    border: none; /*去除按钮边框*/
+    cursor: pointer; /*更改鼠标悬停时的光标形状*/
+    margin-top: 20px; /*更改外边距*/
+    border-radius: 10px; /*更改边框圆角*/
+    background-color: #000000; /*更改按钮颜色*/
+    color: #fff; /*更改按钮文本颜色*/
+    transition: background-color 0.3s, box-shadow 0.3s; /*更改按钮动画*/
 }
 
 button:hover {
-    background-color: var(--button-hover-bg-color);
+    background-color: #333; /*更改按钮颜色*/
 }
 
 .btn-2, #retry {
@@ -66,7 +66,7 @@ button:hover {
     bottom: 10px;
     left: 0;
     width: 100%;
-    font-size: var(--footer-font-size);
+    font-size: 14px;
     text-align: center;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -76,40 +76,58 @@ button:hover {
 
 a, span {
     text-decoration: none;
-    color: var(--link-color);
+    color: rgba(0,0,0,0.6);
     cursor: pointer;
-    transition: color var(--transition-duration);
+    transition: .25s;
 }
 
+/*新增*/ 
 header {
-    padding: var(--header-padding);
-    display: flex;
-    width: 90%;
-    margin: auto;
+    padding: 5px 0; /*更改内边距*/
+    display: flex; /*更改显示方式*/
+    width: 90%; /* 页面最大宽度 */
+    margin: auto; /* 居中显示 */
 }
 
 header img {
-    padding-left: 10px;
+    padding-left: 10px; /*更改内边距*/
 }
 
 header h3 {
-    margin: 0;
-    font-size: var(--header-font-size);
-    padding-left: 10px;
+    margin: 0; /*更改外边距*/
+    font-size: 1.3em; /*更改字体大小*/
+    padding-left: 10px; /*更改外边距*/
 }
 
 .header {
     text-decoration: none;
-    color: var(--button-hover-bg-color);
+    color: #333;
 }
 
-@media (max-width: 600px) {
-    button {
-        font-size: 0.8em;
-        padding: 8px 16px;
-    }
+/* 弹出框优化 */
+.mdui-dialog {
+    border-radius: 8px; /* 更改边框圆角 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
 
-    header h3 {
-        font-size: 1em;
-    }
+.mdui-dialog-title {
+    font-size: 1.5em; /* 更改字体大小 */
+    color: #ffffff; /* 更改字体颜色 */
+    background-color: #333; /* 更改背景颜色 */
+    padding: 16px; /* 更改内边距 */
+}
+
+.mdui-dialog-content {
+    padding: 16px; /* 更改内边距 */
+    font-size: 1em; /* 更改字体大小 */
+}
+
+.mdui-dialog-actions {
+    background-color: #f5f5f5; /* 更改背景颜色 */
+    padding: 8px; /* 更改内边距 */
+    text-align: right; /* 文字右对齐 */
+}
+
+.mdui-dialog-actions .mdui-btn {
+    margin: 0 4px; /* 更改外边距 */
 }
