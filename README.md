@@ -1,3 +1,6 @@
+<div align="center"><a name="readme-top"></a>
+
+[![][image-banner.png]][vercel-link]
 # EatWhat  
 不知道吃什么？问问小猫吧。  
 
