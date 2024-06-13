@@ -1,8 +1,7 @@
-<div align="center"><a name="readme-top"></a>
+# EatWhat  
 
 <img src="image-banner.png" alt="eatwhat.top">
 
-# EatWhat  
 不知道吃什么？问问小猫吧。  
 
 这是一个基于我的兴趣和使用需求构建的网站，同时用于个人学习编写代码。  
