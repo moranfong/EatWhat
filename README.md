@@ -1,6 +1,6 @@
 # EatWhat  
 
-<img src="image-banner.png" alt="eatwhat.top">
+<img src="image-banner.png" alt="www.eatwhat.top">
 
 不知道吃什么？问问小猫吧。  
 
