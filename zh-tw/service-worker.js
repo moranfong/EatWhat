@@ -3,7 +3,7 @@ const filesToCache = [
   '/',
   '/zh-tw/index.htm',
   '/index.css',
-  '/zh-tw/index.js',
+  '/zh-tw/start.js',
   '/images/blackcat.png'
 ];
 
