@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="吃点什么">
-    <meta name="description" content="不知道吃什么？小猫告诉你。选择吃什么，一直是人类难以解决的问题……">
+    <meta name="keywords" content="吃點什麼">
+    <meta name="description" content="不知道吃什麼？小貓告訴你。選擇吃什麼，一直是人類難以解決的問題……">
     <meta property="og:url" content="https://www.eatwhat.top">
     <!-- mdui -->
     <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css" rel="stylesheet">
-    <!-- 主样式 -->
+    <!-- 主樣式 -->
     <link href="/index.css" rel="stylesheet">
     <!-- axios -->
     <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
@@ -22,42 +22,42 @@
     <meta name="shenma-site-verification" content="dcfc347f90a839ed92ecb100cf5e5543_1715498776">
     <meta name="360-site-verification" content="4ba579ad19d52eb1649e88a30d009b59">
     <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
-    <title>吃点什么</title>
+    <title>吃點什麼</title>
     <link rel="manifest" href="/manifest.json"> <!-- PWA -->
     <script async src="https://cdn.seline.so/seline.js" data-token="95bfe62dc0462f0"></script>
 </head>
 
 <header>
-    <img src="/images/blackcat.png" width="30" height="30" alt="LOGO"> <!-- 添加的图片 -->
+    <img src="/images/blackcat.png" width="30" height="30" alt="LOGO"> <!-- 添加的圖片 -->
 </header>
 
 <body>
     <div class="container">
-        <div class="mdui-typo-display-2" id="title">吃点什么</div>
-        <div class="mdui-typo-title-opacity">似乎是一个人类难以解决的问题</div>
+        <div class="mdui-typo-display-2" id="title">吃點什麼</div>
+        <div class="mdui-typo-title-opacity">似乎是一個人類難以解決的問題</div>
         <div class="btn-1 box" id="btn-1">
-            <button onclick="start('food')">吃什么？</button>
-            <button onclick="start('drink')">喝什么？</button>
+            <button onclick="start('food')">吃什麼？</button>
+            <button onclick="start('drink')">喝什麼？</button>
         </div>
         <div class="btn-2 box" id="btn-2">
             <div class="mdui-chip">
-                <span class="mdui-chip-title" id="str">占位符</span>
+                <span class="mdui-chip-title" id="str">佔位符</span>
             </div>
             <button onclick="stop()" id="stop">就它了</button>
         </div>
-        <button id="retry" onclick="retry()">不行，换一个</button>
+        <button id="retry" onclick="retry()">不行，換一個</button>
         <br>
         <br>
         <br>
         <br>
         <div class="footer-box">
-            <span>吃点什么 By <a href="https://fmoran.me" class="a">FMoran</a></span>
+            <span>吃點什麼 By <a href="https://fmoran.me" class="a">FMoran</a></span>
             <br>
             <a href="https://eatwhat.top">©EatWhat 2024</a>
         </div>
     </div>
     <div class="mdui-dialog" id="dialog">
-        <div class="mdui-dialog-title">你怎么还抽？</div>
+        <div class="mdui-dialog-title">你怎麼還抽？</div>
         <div class="mdui-dialog-content" id="info">info</div>
         <div class="mdui-dialog-actions">
             <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>好吧</button>
@@ -66,15 +66,15 @@
 
     <link rel="manifest" href="/manifest.json">
     
-    <!-- 检测语言并动态切换 -->
+    <!-- 檢測語言並動態切換 -->
     <script>
         const userLang = navigator.language || navigator.userLanguage;
 
         if (userLang === 'zh-TW' || userLang === 'zh-HK') {
-            // 如果有繁体中文页面，进行跳转
-            window.location.href = '/zh-tw'; // 假设繁体中文页面在 /zh-tw
+            // 如果有繁體中文頁面，進行跳轉
+            window.location.href = '/zh-tw'; // 假設繁體中文頁面在 /zh-tw
         } else {
-            // 使用自动转换工具将简体转繁体
+            // 使用自動轉換工具將簡體轉繁體
             const script = document.createElement('script');
             script.src = 'https://cdn.jsdelivr.net/npm/zhconvert@1.0.6/dist/zhconvert.min.js';
             document.head.appendChild(script);
@@ -83,7 +83,7 @@
             };
         }
 
-        // 注册 PWA Service Worker
+        // 註冊 PWA Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
