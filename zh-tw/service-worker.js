@@ -1,7 +1,7 @@
 const cacheName = 'eatwhat-v1';
 const filesToCache = [
   '/',
-  '/zh-tw/index.html',
+  '/zh-tw/index.htm',
   '/index.css',
   '/zh-tw/index.js',
   '/images/blackcat.png'
