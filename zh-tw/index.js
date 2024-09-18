@@ -27,7 +27,7 @@ window.onload = () => {
 
     // 獲取列表
     axios
-        .get('db.json')
+        .get('/zh-tw/db.json')
         .then((res)=>{
             food = res.data.food;
             drink = res.data.drink;

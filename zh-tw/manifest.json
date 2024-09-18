@@ -1,7 +1,7 @@
 {
   "name": "吃點什麼，小貓告訴你",
   "short_name": "吃點什麼",
-  "start_url": "/",
+  "start_url": "/zh-tw/",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
