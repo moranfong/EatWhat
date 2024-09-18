@@ -65,21 +65,22 @@
     </div>
 
     <link rel="manifest" href="/manifest.json">
-    
+
     <!-- 检测语言并动态切换 -->
     <script>
         const userLang = navigator.language || navigator.userLanguage;
 
         if (userLang === 'zh-TW' || userLang === 'zh-HK') {
-            // 如果有繁体中文页面，进行跳转
-            window.location.href = '/zh-tw'; // 假设繁体中文页面在 /zh-tw
+            // 如果用户使用繁体中文，跳转到繁体页面
+            window.location.href = '/zh-tw/index.htm';
         } else {
-            // 使用自动转换工具将简体转繁体
+            // 如果是简体中文或其他语言，保持在简体页面
+            // 对其他语言进行简体中文显示处理
             const script = document.createElement('script');
             script.src = 'https://cdn.jsdelivr.net/npm/zhconvert@1.0.6/dist/zhconvert.min.js';
             document.head.appendChild(script);
             script.onload = function () {
-                ZhConvert.toTraditional();
+                ZhConvert.toSimplified();
             };
         }
 

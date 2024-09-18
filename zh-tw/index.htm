@@ -65,22 +65,20 @@
     </div>
 
     <link rel="manifest" href="/manifest.json">
-    
+
     <!-- 檢測語言並動態切換 -->
     <script>
         const userLang = navigator.language || navigator.userLanguage;
 
         if (userLang === 'zh-TW' || userLang === 'zh-HK') {
-            // 如果有繁體中文頁面，進行跳轉
-            window.location.href = '/zh-tw'; // 假設繁體中文頁面在 /zh-tw
+            // 如果是繁體中文，繼續停留在繁體頁面
+            // 可以在這裡加載繁體頁面所需的內容
+        } else if (userLang === 'zh-CN') {
+            // 如果是簡體中文，跳轉到簡體中文頁面
+            window.location.href = '/index';
         } else {
-            // 使用自動轉換工具將簡體轉繁體
-            const script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/npm/zhconvert@1.0.6/dist/zhconvert.min.js';
-            document.head.appendChild(script);
-            script.onload = function () {
-                ZhConvert.toTraditional();
-            };
+            // 如果不是繁體中文或簡體中文，跳轉到簡體中文頁面
+            window.location.href = '/index';
         }
 
         // 註冊 PWA Service Worker
