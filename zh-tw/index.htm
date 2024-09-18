@@ -75,16 +75,16 @@
             // 可以在這裡加載繁體頁面所需的內容
         } else if (userLang === 'zh-CN') {
             // 如果是簡體中文，跳轉到簡體中文頁面
-            window.location.href = '/index';
+            window.location.href = '/index.htm';
         } else {
             // 如果不是繁體中文或簡體中文，跳轉到簡體中文頁面
-            window.location.href = '/index';
+            window.location.href = '/index.htm';
         }
 
         // 註冊 PWA Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                navigator.serviceWorker.register('/zh-tw/service-worker.js').then(function (registration) {
                     console.log('Service Worker registered with scope:', registration.scope);
                 }, function (err) {
                     console.log('Service Worker registration failed:', err);

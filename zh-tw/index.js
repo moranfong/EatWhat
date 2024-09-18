@@ -46,7 +46,7 @@ const start = (what) => {
             infoBox.innerHTML = "我看你啥都別喝了！";
             break;
     };
-    if (count >= 3) {
+    if (count >= 5) {
         inst.open();
         return;
     };
